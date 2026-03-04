@@ -6,6 +6,7 @@ class GreyFilter(BasicFilter):
     def __init__(self, image: ImageNp):
         super().__init__(image)
         self.rgb_rate=[0.299,0.587,0.114] # Human eye sensitivity to RGB
+
     def set_rgb_rate(self, r: float, g: float, b: float):
         total = r + g + b
         if total == 0:

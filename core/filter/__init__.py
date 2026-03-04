@@ -1,1 +1,2 @@
 from core.filter.grey_filter import GreyFilter
+from core.filter.bright_contrast_filter import BrightContrastFilter
