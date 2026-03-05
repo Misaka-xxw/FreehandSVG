@@ -871,7 +871,7 @@ def vectorize_final(img_0_255: np.ndarray, p: Params = Params()) -> List[str]:
 # ============================================================
 if __name__ == "__main__":
     # Your binary image: white background 255, black strokes 0
-    img = np.array(Image.open(r"D:\GitHub\FreehandSVG\test\img\binary_2.png").convert("L"))
+    img = np.array(Image.open(r"D:\GitHub\FreehandSVG\test\img\clean_edges3.png").convert("L"))
 
     p = Params(
         close_size=3,
@@ -898,7 +898,7 @@ if __name__ == "__main__":
     )
 
     paths = vectorize_final(img, p)
-    save_svg(paths, img.shape[1], img.shape[0], "output_final2.svg", p)
+    save_svg(paths, img.shape[1], img.shape[0], "output3.svg", p)
 
     print("done",
           "paths=", len(paths),
