@@ -1,0 +1,1 @@
+from core.vector.skeleton import skeletonize_image
